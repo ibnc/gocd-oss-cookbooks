@@ -124,6 +124,7 @@ gpgkey=http://repository.it4i.cz/mirrors/repoforge/RPM-GPG-KEY.dag.txt
 mirrorlist=http://mirrorlist.repoforge.org/el6/mirrors-rpmforge-extras
 EOF
     try yum install --assumeyes mercurial --enablerepo=rpmforge-extras
+    try yum update --assumeyes git --enablerepo=rpmforge-extras
 else
     try yum install --assumeyes mercurial
   fi
